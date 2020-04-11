@@ -6,7 +6,7 @@ services:
         environment:
             TZ: Asia/Shanghai
         ports:
-            - "8080:8080"
+            - "8081:8081"
         volumes:
             - "/data/mblog/storage:/app/mblog/storage"
             - "/data/mblog/mblog-latest.jar:/app/mblog/mblog-latest.jar"

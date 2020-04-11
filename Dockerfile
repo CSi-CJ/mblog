@@ -10,6 +10,6 @@ RUN ln -sf /usr/share/zoneinfo/{TZ} /etc/localtime && echo "{TZ}" > /etc/timezon
 #RUN cd /build && mvn package -Dmaven.test.skip=true -Pmysql \
 #    && cp -f target/mblog-latest.jar /app/mblog && rm -rf /build/*
 
-EXPOSE 8080
+EXPOSE 8081
 
 ENTRYPOINT ["java","-jar","/app/mblog/mblog-latest.jar"]
