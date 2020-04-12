@@ -8,7 +8,7 @@ ENV TZ=Asia/Shanghai
 RUN ln -sf /usr/share/zoneinfo/{TZ} /etc/localtime && echo "{TZ}" > /etc/timezone
 
 RUN cd /build && mvn package -Dmaven.test.skip=true -Pmysql \
-    && cp -f target/mblog-latest.jar /data/mblog && rm -rf /build/*
+    && cp -f target/mblog-latest.jar /app/mblog && rm -rf /build/*
 
 EXPOSE 8081
 
