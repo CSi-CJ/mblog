@@ -3,10 +3,10 @@ spring:
         #schema: classpath*:scripts/schema.sql
         #continue-on-error: false
         #sql-script-encoding: utf-8
-        url: jdbc:mysql://127.0.0.1:3306/mblog?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+        url: jdbc:mysql://cdb-9pydlcgw.cd.tencentcdb.com:10077/mblog?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
         #GMT%2B8
         username: root
-        password: 123456
+        password: root123456
         driver-class-name: com.mysql.cj.jdbc.Driver
     flyway:
         enabled: true
