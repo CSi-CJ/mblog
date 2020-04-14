@@ -15,7 +15,7 @@
     14. 邮件服务后台可配
     15. 新增标签页
     16. 新增注册邮箱验证开关(需要手动删除之前的 mto_security_code 表)
-
+    17.
     附表名调整:
     	mto_favors           -> mto_favorite
     	mto_config           -> mto_options
