@@ -2,7 +2,8 @@ version: '3'
 services:
     server:
         container_name: mtons-blog
-        image: langhsu/mblog:latest
+        image: 192.168.126.130:5000/mblog:latest
+#        langhsu/mblog:latest
         environment:
             TZ: Asia/Shanghai
         ports:
