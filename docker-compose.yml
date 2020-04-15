@@ -12,3 +12,5 @@ services:
             - "/data/mblog/storage:/app/mblog/storage"
             - "/data/mblog:/app/mblog"
         restart: always
+#暂时不用docker-compose
+#docker run -d --name mtons-blog -p 8082:8081 -v /data/mblog/storage:/app/mblog/storage -v /data/mblog:/app/mblog --restart=always 192.168.126.130:5000/mblog:latest
