@@ -7,10 +7,10 @@ services:
         environment:
             TZ: Asia/Shanghai
         ports:
-            - "8081:8088"
+            - "8082:8088"
         volumes:
             - "/data/mblog/storage:/app/mblog/storage"
-            - "/data/mblog:/app/mblog"
+            - "/data/mblog/mblog-latest.jar:/app/mblog/mblog-latest.jar"
         restart: always
 #暂时不用docker-compose
-#docker run -d --name mtons-blog -p 8082:8081 -v /data/mblog/storage:/app/mblog/storage -v /data/mblog:/app/mblog --restart=always 192.168.126.130:5000/mblog:latest
+#docker run -d --name mtons-blog -p 8082:8088 -v /data/mblog/storage:/app/mblog/storage -v /data/mblog:/app/mblog --restart=always 192.168.126.130:5000/mblog:latest
