@@ -299,11 +299,11 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://192.168.126.130:8081/repository/maven-releases/</url>
+			<url>http://192.168.126.134:8081/repository/maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<url>http://192.168.126.130:8081/repository/maven-snapshots/</url>
+			<url>http://192.168.126.134:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -375,9 +375,9 @@
 					<imageTags>
 						<imageTag>${project.version}</imageTag>
 					</imageTags>
-					<registryUrl>192.168.126.130:5000</registryUrl>
+					<registryUrl>192.168.126.134:5000</registryUrl>
 					<pushImage>true</pushImage>
-					<imageName>192.168.126.130:5000/${project.artifactId}:${project.version}</imageName>
+					<imageName>192.168.126.134:5000/${project.artifactId}:${project.version}</imageName>
 					<!--构建镜像的配置信息-->
 					<resources>
 						<resource>
