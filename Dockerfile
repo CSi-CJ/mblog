@@ -12,6 +12,6 @@ RUN cd /build && mvn package -Dmaven.test.skip=true -Pmysql
 ADD target/mblog-latest.jar /app/mblog/
 RUN rm -rf /build/*
 
-EXPOSE 8081
+EXPOSE 8088
 
 ENTRYPOINT ["java","-jar","/app/mblog/mblog-latest.jar"]
