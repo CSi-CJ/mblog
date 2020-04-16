@@ -9,7 +9,7 @@ RUN ln -sf /usr/share/zoneinfo/{TZ} /etc/localtime && echo "{TZ}" > /etc/timezon
 
 RUN cd /build && mvn package -Dmaven.test.skip=true -Pmysql
 # \&& cp -f target/mblog-latest.jar /app/mblog && rm -rf /build/*
-COPY /var/jenkins_home/workspace/test01/target/mblog-latest.jar /app/mblog/
+COPY target/mblog-latest.jar /app/mblog/
 RUN rm -rf /build/*
 
 EXPOSE 8088
