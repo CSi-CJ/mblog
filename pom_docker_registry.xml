@@ -293,6 +293,22 @@
 		</profile>
 	</profiles>
 
+
+
+	<!--添加maven私服-->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://192.168.126.130:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://192.168.126.130:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+
 	<build>
 		<defaultGoal>compile</defaultGoal>
 		<resources>
