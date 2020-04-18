@@ -12,3 +12,4 @@ mvn clean package -Dmaven.test.skip=true
 
 echo "mblog打包完毕, 可使用sh run.sh start进行启动"
 
+echo "mblog打包完毕, 可使用sh run.sh start进行启动"
